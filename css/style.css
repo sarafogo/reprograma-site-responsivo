@@ -28,7 +28,9 @@ body {
 .menu { /* engloba cada item da lista (li) */
     display: flex;
 }
-
+.home {
+    display: none;
+}
 .menu__item { /*engloba o link*/
     margin: 0 16px;
     padding: 8px;
@@ -38,6 +40,10 @@ body {
     font-size: 21px;
     text-decoration: none;
     color: #FFF;
+}
+main {
+    width: 100%;
+    height: 100%;
 }
 
 .text { /* engloba o title h1 e o subtitle p */
@@ -81,7 +87,8 @@ body {
 }
 
 .box {
-    width: 500px;
+    max-width: 500px;
+
 }
 
 .box--right {
@@ -91,4 +98,13 @@ body {
 .box__icons {
     margin: 42px 120px;
 }
+@media screen and (max-width: 840px) {
 
+    .menu {
+        display: none;
+        
+    }
+    .home {
+        display: flex;
+    }
+}
